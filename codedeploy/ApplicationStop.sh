@@ -1,3 +1,3 @@
 #!/bin/bash
-killall app
+killall app-bin
 exit 0

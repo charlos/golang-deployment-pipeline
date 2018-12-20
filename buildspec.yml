@@ -4,6 +4,7 @@ phases:
 
   install: 
     commands:
+      - cd app/src/
       - go get -u github.com/golang/lint/golint
 
   pre_build: 
@@ -19,11 +20,11 @@ phases:
     commands:
 
       # Build our application
-      - go build -o app
+      - go build -o ../../app-bin
 
 artifacts:
   files:
-    - app
+    - app-bin
     - appspec.yml
     - buildspec.yml
     - config/*
